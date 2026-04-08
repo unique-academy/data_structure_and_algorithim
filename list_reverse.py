@@ -1,5 +1,4 @@
 # ============================================================
-# list_reverse.py
 # Reverses a list manually — without reverse() or slicing.
 # Two approaches are shown: in-place two-pointer swap and
 # building a new reversed list.
@@ -29,7 +28,6 @@ def reverse_new_list(numbers):
     """
     Return a NEW reversed list by iterating from the last index
     to index 0.
-    Time complexity: O(n)  |  Space complexity: O(n)
     """
     reversed_list = []
     for index in range(len(numbers) - 1, -1, -1):
@@ -57,21 +55,21 @@ def main():
     print(f"  Source unchanged     : {source}")   # Confirm original is intact
 
     # --- Edge cases ---
-    print("\n  --- Edge Cases ---")
-
-    single_element = [42]
-    reverse_inplace(single_element)
-    print(f"  Single element       : {single_element}")  # Should stay [42]
-
-    empty = []
-    reverse_inplace(empty)
-    print(f"  Empty list           : {empty}")            # Should stay []
-
-    two_elements = [1, 2]
-    reverse_inplace(two_elements)
-    print(f"  Two elements [1,2]   : {two_elements}")    # Should become [2, 1]
-
-    print("=" * 55)
+    # print("\n  --- Edge Cases ---")
+    #
+    # single_element = [42]
+    # reverse_inplace(single_element)
+    # print(f"  Single element       : {single_element}")  # Should stay [42]
+    #
+    # empty = []
+    # reverse_inplace(empty)
+    # print(f"  Empty list           : {empty}")            # Should stay []
+    #
+    # two_elements = [1, 2]
+    # reverse_inplace(two_elements)
+    # print(f"  Two elements [1,2]   : {two_elements}")    # Should become [2, 1]
+    #
+    # print("=" * 55)
 
 
 if __name__ == "__main__":
