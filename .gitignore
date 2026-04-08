@@ -1,0 +1,61 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+### Virtual Environments ###
+# It's best practice to never git-add your environment
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+### PyCharm (JetBrains) ###
+# Ignore the IDE settings folder
+.idea/
+# Except for these specific files if you want to share run configurations
+# !.idea/runConfigurations/
+# !.idea/deployment.xml
+
+### OS Specific ###
+.DS_Store
+Thumbs.db
