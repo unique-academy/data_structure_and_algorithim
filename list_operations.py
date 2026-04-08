@@ -12,26 +12,26 @@ def main():
     print("=" * 19 + "By Tajir Ramadhan" + "=" * 19)
 
     # --- 1. CREATE ---
-    integer_list = [10, 20, 30, 40, 50]
+    integer_list = [100, 200, 300, 400, 500]
     display_list("Initial list", integer_list)
 
-    # --- 2. APPEND – add to the end ---
-    integer_list.append(60)
-    display_list("After append(60)", integer_list)
+    # --- 2. APPEND fuction adds the value to the end ---
+    integer_list.append(600)
+    display_list("After append(600)", integer_list)
 
-    # --- 3. INSERT – add at a specific index ---
-    integer_list.insert(2, 25)          # Insert 25 at index 2
-    display_list("After insert(2, 25)", integer_list)
+    # --- 3. INSERT() add at a specific defined index ---
+    integer_list.insert(2, 250)          # Insert 250 at index 2
+    display_list("After insert(2, 250)", integer_list)
 
-    # --- 4. MODIFY – change an element by index ---
-    integer_list[0] = 5                 # Replace 10 with 5
-    display_list("After modifying index 0 → 5", integer_list)
+    # --- 4. MODIFY() change an element by index ---
+    integer_list[0] = 50                # Replace 100 with 50
+    display_list("After modifying index 0 → 50", integer_list)
 
-    # --- 5. REMOVE – delete first occurrence of a value ---
-    integer_list.remove(40)
-    display_list("After remove(40)", integer_list)
+    # --- 5. REMOVE() delete first occurrence of a value ---
+    integer_list.remove(400)
+    display_list("After remove(400)", integer_list)
 
-    # --- 6. POP – remove and return element at index ---
+    # --- 6. POP() remove and return element at index ---
     popped_value = integer_list.pop(3)  # Remove element at index 3
     display_list(f"After pop(3)  [popped: {popped_value}]", integer_list)
 
@@ -39,15 +39,7 @@ def main():
     integer_list.sort()
     display_list("After sort()", integer_list)
 
-    # --- pop from an empty list to study the behaviour ---
-    print("\n  popping from empty list:")
-    empty_list = []
-    try:
-        empty_list.pop()
-    except IndexError:
-        print("  IndexError caught: cannot pop from an empty list.")
-
-    print("=" * 55)
+    print("=" * 22 + "THE END" + "=" * 22)
 
 
 if __name__ == "__main__":
