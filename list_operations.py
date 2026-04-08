@@ -1,18 +1,15 @@
-# ============================================================
-# list_operations.py
 # Demonstrates creating and modifying a list of integers
 # using append(), insert(), remove(), and pop()
-# ============================================================
 
 def display_list(label, data):
-    """Helper function to print a labelled list."""
+    """Custom function to print a labeled list."""
     print(f"  {label}: {data}")
 
 
 def main():
     print("=" * 55)
     print("       LIST OPERATIONS: INSERT, DELETE, MODIFY")
-    print("=" * 55)
+    print("=" * 19 + "By Tajir Ramadhan" + "=" * 19)
 
     # --- 1. CREATE ---
     integer_list = [10, 20, 30, 40, 50]
@@ -42,8 +39,8 @@ def main():
     integer_list.sort()
     display_list("After sort()", integer_list)
 
-    # --- Edge case: pop from an empty list ---
-    print("\n  Edge case – popping from empty list:")
+    # --- pop from an empty list to study the behaviour ---
+    print("\n  popping from empty list:")
     empty_list = []
     try:
         empty_list.pop()
